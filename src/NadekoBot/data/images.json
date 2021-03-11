@@ -1,0 +1,110 @@
+{
+  "Version": 3,
+  "Moderation": {
+
+    "Warn": [
+
+      "https://cdn.discordapp.com/attachments/404549045168766986/647521108614053929/e39rQvmJ8F.png"
+
+    ],
+
+    "Mute": [
+
+      "https://cdn.discordapp.com/attachments/404549045168766986/647522560610926653/WwSs9Sb.png"
+
+    ],
+
+    "Ban": [
+
+      "https://cdn.discordapp.com/attachments/404549045168766986/647522562913599498/xOPg9fg.png"
+
+    ],
+
+    "Kick": [
+
+      "https://cdn.discordapp.com/attachments/404549045168766986/647522565337907221/blfT0QY.png"
+
+    ]
+
+  },
+  "Coins": {
+    "Heads": [
+      "https://cdn.discordapp.com/attachments/404549045168766986/647520807576403969/25741_coin_reverse-910x91090x9109110.png"
+    ],
+    "Tails": [
+      "https://cdn.discordapp.com/attachments/404549045168766986/647520813561544724/25741_coin_reverse-910x910.png"
+    ]
+  },
+  "Currency": [
+    "https://cdn.discordapp.com/attachments/404549045168766986/689410423996284949/PicsArt_03-17-12.27.34.png",
+    "https://cdn.discordapp.com/attachments/404549045168766986/689410424483217416/PicsArt_03-17-12.27.52.png",
+    "https://cdn.discordapp.com/attachments/404549045168766986/689410425061900397/PicsArt_03-17-12.28.08.png",
+    "https://cdn.discordapp.com/attachments/404549045168766986/689410425447514138/PicsArt_03-17-12.28.26.png",
+    "https://cdn.discordapp.com/attachments/404549045168766986/689410425863143441/PicsArt_03-17-12.28.53.png",
+    "https://cdn.discordapp.com/attachments/404549045168766986/689410426307739654/PicsArt_03-17-12.29.14.png"
+  ],
+  "Dice": [
+    "https://i.imgur.com/KyOfDw1.png",
+    "https://i.imgur.com/IX8xjZ3.png",
+    "https://i.imgur.com/k9GqKp5.png",
+    "https://i.imgur.com/rmhTSnp.png",
+    "https://i.imgur.com/93PUmFr.png",
+    "https://i.imgur.com/CMBCJRC.png",
+    "https://i.imgur.com/VqhUpsV.png",
+    "https://i.imgur.com/r6rFCuT.png",
+    "https://i.imgur.com/eIxuOpg.png",
+    "https://i.imgur.com/At9YgRO.png"
+  ],
+  "Rategirl": {
+    "Matrix": "https://i.imgur.com/z7yySqA.png",
+    "Dot": "https://i.imgur.com/TpubajW.png"
+  },
+  "XpBg": [
+    	"https://media.discordapp.net/attachments/404549045168766986/750459796846543051/PicsArt_09-01-05.08.34.png?width=800&height=450", 
+	"https://media.discordapp.net/attachments/404549045168766986/696683152978214922/xp_template_donaters2.png",
+	"https://cdn.discordapp.com/attachments/404549045168766986/647525350120751134/xp_template_moders.png",
+	"https://cdn.discordapp.com/attachments/404549045168766986/647525381045485598/xp_template_anilibria_2.png",
+	"https://media.discordapp.net/attachments/404549045168766986/751443124085194892/xp_template_oathum.png"
+  ],
+  "Rip": {
+    "Bg": "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/rip/rip.png",
+    "Overlay": "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/rip/overlay.png"
+  },
+  "Slots": {
+    "Emojis": [
+      "https://cdn.discordapp.com/attachments/404549045168766986/739901009735712898/bamboo.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/739901011040141392/fan.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/739901011900104704/koi.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/739901014110634005/philosophy.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/739901016367038474/architecture-and-city.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/739901026433499266/cherry-blossom.png"
+    ],
+    "Numbers": [
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/0.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/1.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/2.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/3.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/4.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/5.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/6.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/7.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/8.png",
+      "https://nadeko-pictures.nyc3.digitaloceanspaces.com/other/slots/numbers/9.png"
+    ],
+    "Bg": "https://media.discordapp.net/attachments/404549045168766986/739900954765164646/slot-bg_2.png?width=475&height=475"
+  },
+  "Wheel": {
+    "Emojis": [
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926219247288340/full_arrow_top.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926261891170374/full_arrow_left_top.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926327254810684/full_arrow_left.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926346636427305/full_arrow_left_bot.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926364734980116/full_arrow_bot.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926407021821982/full_arrow_right_bot.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926416341827684/full_arrow_right.png",
+      "https://cdn.discordapp.com/attachments/404549045168766986/760926426508689458/full_arrow_right_top.png",
+	  "https://cdn.discordapp.com/attachments/404549045168766986/760926811231617034/wheel_center_emoji_126x124.png"
+    ],
+    "Bg": "https://media.discordapp.net/attachments/404549045168766986/762413472914866206/wheel_null_3.png"
+  }
+}
