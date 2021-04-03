@@ -629,7 +629,7 @@
     ]
   },
   "userinfo": {
-    "Cmd": "userinfo uinfo user",
+    "Cmd": "userinfo uinfo",
     "Desc": "Shows info about the user. If no user is supplied, it defaults a user running the command.",
     "Usage": [
       "{0}uinfo @SomeUser or {0}user UserName#0000"
@@ -2464,7 +2464,7 @@
     ]
   },
   "waifuinfo": {
-    "Cmd": "waifuinfo waifustats waifu",
+    "Cmd": "user",
     "Desc": "Shows waifu stats for a target person. Defaults to you if no user is provided.",
     "Usage": [
       "{0}waifuinfo @MyCrush or {0}waifu UserName#000",
