@@ -317,7 +317,38 @@ namespace NadekoBot.Modules.Gambling
             [RequireContext(ContextType.Guild)]
             public async Task WaifuInfo([Remainder]IGuildUser target = null)
             {
-                if (target == null)
+                var user = target ?? Context.User as IGuildUser;
+                if (user == null)
+                    return;
+
+                var time = DateTime.UtcNow - user.JoinedAt;
+                var wi = _service.GetFullWaifuInfoAsync(user);
+
+                var info = wi.Info ?? GetText("about_me");
+
+                var embed = new EmbedBuilder();
+                if (!string.IsNullOrWhiteSpace(user.Nickname))
+                    embed.WithAuthor(user.Nickname + " - " + GetText(_service.GetRepTitle(wi.Reputation)));
+                var roles = user.RoleIds.Count > 1 ? user.GetRoles().Skip(1).Select(r => { return $"<@&{r.Id}>"; }) : null;
+
+                embed.WithTitle($"{user.Username}#{user.Discriminator}")
+                    .WithDescription(Format.Bold(GetText("info")) + "\n" + info)
+                    .AddField(efb => efb.WithName(GetText("reputation")).WithValue("**+" + wi.Reputation.ToString() + " 🤍**").WithIsInline(true))
+                    .AddField(fb => fb.WithName(GetText("joined_server")).WithValue($"{user.JoinedAt?.ToString("dd.MM.yyyy HH:mm") ?? "?"} ({time:dd} {GetText("days")})").WithIsInline(true))
+                    .AddField(fb => fb.WithName($"{GetText("roles", user.RoleIds.Count - 1)}").WithValue($"{(roles != null ? string.Join(" | ", roles).SanitizeMentions() : GetText("no_roles"))}").WithIsInline(false))
+                    .WithFooter($"{GetText("user_id")} - {user.Id}")
+                    .WithColor(NadekoBot.OkColor);
+
+                var av = user.RealAvatarUrl();
+                if (av != null && av.IsAbsoluteUri)
+                {
+                    embed.WithUrl(av.ToString())
+                        .WithThumbnailUrl(av.ToString());
+                }
+
+                await Context.Channel.EmbedAsync(embed).ConfigureAwait(false);
+                
+                /*if (target == null)
                     target = (IGuildUser)Context.User;
                 var wi = _service.GetFullWaifuInfoAsync(target);
                 var affInfo = _service.GetAffinityTitle(wi.AffinityCount);
@@ -361,7 +392,7 @@ namespace NadekoBot.Modules.Gambling
                     .AddField(efb => efb.WithName(GetText("Waifus", wi.ClaimCount)).WithValue(wi.ClaimCount == 0 ? nobody + "\n_______" : string.Join("\n", wi.Claims30) + "\n_______").WithIsInline(true))
                     .WithFooter(text: GetText("info") + " " + info, iconUrl: "https://cdn.discordapp.com/attachments/404549045168766986/650350116221353995/sK6tzE73ub.png");
 
-                await Context.Channel.EmbedAsync(embed).ConfigureAwait(false);
+                await Context.Channel.EmbedAsync(embed).ConfigureAwait(false);*/
             }
 
             [NadekoCommand, Usage, Description, Aliases]
